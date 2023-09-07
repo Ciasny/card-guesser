@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './card.css'
 
-function Card({ symbol, setCardsClicked, cardsClicked }) {
+function Card({ symbol, setCardsClicked, cardsClicked, setScore }) {
 
     function handleClick(e) {
-        if (cardsClicked <= 1) {
+        if (e.target.className === 'card guessed-card') {
+
+        } else if (cardsClicked <= 1) {
             e.target.className = 'clicked-card card';
-            setCardsClicked(prev => prev + 1)
+            setCardsClicked(prev => prev + 1);
+            setScore(prev => prev + 1)
         }
     }
 

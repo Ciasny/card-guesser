@@ -1,9 +1,9 @@
 import React from "react";
-
-function Score() {
+import './score.css'
+function Score({ score }) {
     return (
         <>
-
+            <p className="score-value">{score}</p>
         </>
     )
 }
