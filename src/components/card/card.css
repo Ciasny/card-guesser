@@ -21,3 +21,10 @@
     color: black;
     transform: rotate3d(0, 1, 0, 0deg);
 }
+
+.guessed-card {
+    background-color: rgb(158, 255, 190);
+
+    color: black;
+    transform: rotate3d(0, 1, 0, 0deg);
+}

@@ -44,15 +44,21 @@ function Board() {
     useEffect(() => {
         if (cardsClicked > 1) {
             setTimeout(() => {
+
                 const card1 = document.getElementsByClassName('clicked-card')[0]
                 const card2 = document.getElementsByClassName('clicked-card')[1]
 
-                card1.className = 'card'
-                card2.className = 'card'
+                if (card1.innerHTML === card2.innerHTML) {
+                    card1.className = 'card guessed-card'
+                    card2.className = 'card guessed-card'
+                } else {
+                    card1.className = 'card'
+                    card2.className = 'card'
+                }
 
-                console.log('a')
                 setCardsClicked(0)
-            }, 2000)
+
+            }, 1000)
             clearTimeout()
         }
     }, [cardsClicked])

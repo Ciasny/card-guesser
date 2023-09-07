@@ -10,11 +10,6 @@ function Card({ symbol, setCardsClicked, cardsClicked }) {
         }
     }
 
-    useEffect(() => {
-        if (cardsClicked > 2) {
-
-        }
-    }, [cardsClicked])
 
     return (
         <div className="card" onClick={handleClick}>
