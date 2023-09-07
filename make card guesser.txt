@@ -1,0 +1,15 @@
+SPA single page application
+
+When clicked on card it reveals symbol on it
+when clicked on second card it reveal symbol on it:
+	if cards match they stay revealed
+	else both go back to hidden state
+on each 2 cards revealed counter goes up bo one
+
+app should use react redux
+
+components:
+	card
+	board
+	scoreboard
+	options
