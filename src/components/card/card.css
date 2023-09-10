@@ -14,7 +14,12 @@
     user-select: none;
 }
 
+.card:hover {
+    background-color: rgb(141, 223, 255);
+    color: rgb(141, 223, 255);
+    box-shadow: 1px 1px 10px rgb(211, 211, 211);
 
+}
 
 .clicked-card {
 
@@ -22,9 +27,20 @@
     transform: rotate3d(0, 1, 0, 0deg);
 }
 
+.clicked-card:hover {
+    color: black;
+
+}
+
 .guessed-card {
     background-color: rgb(158, 255, 190);
 
     color: black;
     transform: rotate3d(0, 1, 0, 0deg);
+}
+
+.guessed-card:hover {
+    background-color: rgb(139, 255, 178);
+
+    color: black;
 }

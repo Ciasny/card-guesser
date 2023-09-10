@@ -1,0 +1,42 @@
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding-top: 100px;
+}
+
+.win-container {
+    background-color: white;
+    width: 20%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(85, 85, 85);
+    padding: 40px;
+}
+
+.playagain-btn {
+    color: white;
+    background-color: rgb(158, 228, 255);
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.playagain-btn:hover {
+    background-color: rgb(104, 212, 255);
+
+}
+
+h2 {
+    font-size: 30px;
+
+}
+
+p {}

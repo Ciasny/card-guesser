@@ -36,10 +36,12 @@ function createEmptyMatrix(size) {
 }
 
 const symbolsObj = createSymbolArray(4);
-
-function Board({ setScore }) {
+let cardsGuessed = 0;
+function Board({ setScore, setIsFinished }) {
 
     const [cardsClicked, setCardsClicked] = useState(0);
+
+
 
     useEffect(() => {
         if (cardsClicked > 1) {
@@ -54,6 +56,11 @@ function Board({ setScore }) {
                     card2.onClick = null;
                     card2.className = 'card guessed-card'
 
+                    cardsGuessed++;
+                    console.log(cardsGuessed)
+                    if (cardsGuessed === 8) {
+                        setIsFinished(true);
+                    }
 
                 } else {
                     card1.className = 'card'

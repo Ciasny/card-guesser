@@ -3,7 +3,9 @@ import './score.css'
 function Score({ score }) {
     return (
         <>
-            <p className="score-value">{score}</p>
+            <div className="scoreboard">
+                <p className="score-value">{score}</p>
+            </div>
         </>
     )
 }
