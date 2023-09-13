@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/card-guesser/static/css/main.c62a4978.css",
+    "main.js": "/card-guesser/static/js/main.d50515d8.js",
+    "static/js/787.5114092c.chunk.js": "/card-guesser/static/js/787.5114092c.chunk.js",
+    "index.html": "/card-guesser/index.html",
+    "main.c62a4978.css.map": "/card-guesser/static/css/main.c62a4978.css.map",
+    "main.d50515d8.js.map": "/card-guesser/static/js/main.d50515d8.js.map",
+    "787.5114092c.chunk.js.map": "/card-guesser/static/js/787.5114092c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c62a4978.css",
+    "static/js/main.d50515d8.js"
+  ]
+}
