@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card/Card";
 
+
+
 function createSymbolArray(size) {
     const symbols = [1, 2, 3, 4, 5, 6, 7, 8];
     let result = createEmptyMatrix(size);
@@ -37,7 +39,9 @@ function createEmptyMatrix(size) {
 
 const symbolsObj = createSymbolArray(4);
 let cardsGuessed = 0;
-function Board({ setScore, setIsFinished }) {
+
+
+function Board({ setMoves, setIsFinished }) {
 
     const [cardsClicked, setCardsClicked] = useState(0);
 
@@ -76,13 +80,23 @@ function Board({ setScore, setIsFinished }) {
 
     return (
         <>
-            {symbolsObj.map(item => {
-                return (
-                    <div className="board-row" key={`${item[0].id}`}>
-                        {item.map(data => <Card symbol={data.symbol} key={`${data.id}`} setCardsClicked={setCardsClicked} cardsClicked={cardsClicked} setScore={setScore} />)}
-                    </div>
-                )
-            })}
+            {
+                setMoves ?
+                    symbolsObj.map(item => {
+                        return (
+                            <div className="board-row" key={`${item[0].id}`}>
+                                {item.map(data => <Card symbol={data.symbol} key={`${data.id}`} setCardsClicked={setCardsClicked} cardsClicked={cardsClicked} setMoves={setMoves} />)}
+                            </div>
+                        )
+                    }) :
+                    symbolsObj.map(item => {
+                        return (
+                            <div className="board-row" key={`${item[0].id}`}>
+                                {item.map(data => <Card symbol={data.symbol} key={`${data.id}`} />)}
+                            </div>
+                        )
+                    })
+            }
         </>
     );
 }
